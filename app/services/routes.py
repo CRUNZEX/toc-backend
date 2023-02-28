@@ -1,6 +1,6 @@
 from app import app
 from flask import Blueprint, request
-import re
+import re, os
 
 from app.crawler import Crawler
 from app.utils import temple_dict
@@ -104,5 +104,3 @@ def post_search():
 
     except Exception as err:
         return { 'error': err }, 400
-
-
