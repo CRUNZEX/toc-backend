@@ -86,7 +86,7 @@ def post_search():
 
         # merge temple
         lst_temple = []
-        for province_th, province_en in zip(LIST_PROVINCE_TH, LIST_PROVINCE_EN):
+        for province_th in LIST_PROVINCE_TH:
             lst_temple += temple_dict(province_th)
 
         temple = request.json['temple']
